@@ -47,6 +47,7 @@ nav a {
   color: white;
   font-size: 18px;
   position: relative;
+  margin-top: 22px;
 }
 
 nav a::after {
