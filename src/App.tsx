@@ -1,31 +1,25 @@
-import Inicio from './componentes/Inicio'
-import Serviços from './componentes/Serviços'
-import Projeto from './componentes/Projetos'
-import Contato from './componentes/Contato'
-import Tecnologias from './componentes/Tecnologia'
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
+import Projects from "./components/Projects";
+import Technologies from "./components/Technologies";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-
-const App = () => {
+export default function App() {
   return (
     <>
-    
-     <nav>
-  <a href="#inicio">Início</a>
-  <a href="#Serviços">Serviços</a>
-  <a href="#projetos">Projetos</a>
-  <a href="#tecnologia">Tecnologia</a>
-  <a href="#contato">Contato</a>
-</nav>
-     
-      <Inicio />
-       <Serviços/>
-      <Projeto />
-       <Tecnologias/>
-      <Contato />
-     
-  
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Projects />
+        <Technologies />
+        <Contact />
+      </main>
+      <Footer />
     </>
-  )
+  );
 }
-
-export default App

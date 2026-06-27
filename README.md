@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# Portfólio — Aristoteles Barros Dal Farra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal feito com **React + TypeScript + Vite e CSS puro** (sem Next.js e sem Tailwind).
+Tema em tons de azul, cards de projeto, seção de serviços, tecnologias, animações de scroll e responsividade.
 
-Currently, two official plugins are available:
+## 🚀 Rodando o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Precisa do **Node.js 18+** instalado.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install     # instala as dependências
+npm run dev     # roda em modo desenvolvimento
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Abra o endereço que aparecer no terminal (geralmente http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Outros comandos: `npm run build` (produção), `npm run preview`, `npm run lint`.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ✏️ Como personalizar
+
+Todo o conteúdo fica em `src/data/`:
+
+| O que mudar | Arquivo |
+|---|---|
+| Nome, bio, foto, redes sociais | `src/data/profile.ts` |
+| Projetos (cada um vira um card) | `src/data/projects.ts` |
+| Serviços | `src/data/services.ts` |
+| Tecnologias e nível | `src/data/technologies.ts` |
+
+As cores e o visual ficam em `src/styles/index.css` (variáveis no topo, dentro de `:root`).
+As imagens ficam em `src/assets/` (foto, `projetos/`, `servicos/`, `tech/`).
+
+## 📁 Estrutura
+
 ```
+src/
+├── assets/            imagens (foto, projetos, serviços, tecnologias)
+├── components/        Navbar, Hero, About, Services, Projects, ProjectCard,
+│                      Technologies, Contact, Footer, Reveal, SectionHeading, Icons
+├── data/              conteúdo editável
+├── styles/index.css   tema azul + todos os estilos (CSS puro)
+├── App.tsx            monta as seções
+└── main.tsx           ponto de entrada
+```
+
+## 🧰 Tecnologias
+
+React 19 · TypeScript · Vite · CSS puro
