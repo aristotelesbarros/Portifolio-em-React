@@ -1,48 +1,49 @@
 # Portfólio — Aristoteles Barros Dal Farra
 
-Portfólio pessoal feito com **React + TypeScript + Vite e CSS puro** (sem Next.js e sem Tailwind).
-Tema em tons de azul, cards de projeto, seção de serviços, tecnologias, animações de scroll e responsividade.
+Portfólio pessoal feito com **React, TypeScript e CSS puro** (sem Next.js e sem Tailwind).
+Tema em tons de azul, cards de projeto, serviços, tecnologias, animações e responsividade.
 
-## 🚀 Rodando o projeto
+## Como rodar
 
-Precisa do **Node.js 18+** instalado.
+Você precisa do **Node.js** instalado.
 
 ```bash
-npm install     # instala as dependências
-npm run dev     # roda em modo desenvolvimento
+npm install     # baixa as dependências (só na primeira vez)
+npm run dev     # liga o site no navegador
 ```
 
-Abra o endereço que aparecer no terminal (geralmente http://localhost:5173).
+Abra o endereço que aparecer no terminal (normalmente http://localhost:5173).
 
-Outros comandos: `npm run build` (produção), `npm run preview`, `npm run lint`.
+Para parar, aperte `Ctrl + C`. Outros comandos: `npm run build`, `npm run preview`.
 
-## ✏️ Como personalizar
+## Onde editar cada coisa
 
-Todo o conteúdo fica em `src/data/`:
+Todo o conteúdo fica na pasta `src/dados/`:
 
 | O que mudar | Arquivo |
 |---|---|
-| Nome, bio, foto, redes sociais | `src/data/profile.ts` |
-| Projetos (cada um vira um card) | `src/data/projects.ts` |
-| Serviços | `src/data/services.ts` |
-| Tecnologias e nível | `src/data/technologies.ts` |
+| Nome, textos, foto, links das redes | `src/dados/perfil.ts` |
+| Projetos (cada um vira um card) | `src/dados/projetos.ts` |
+| Serviços | `src/dados/servicos.ts` |
+| Tecnologias e nível | `src/dados/tecnologias.ts` |
 
-As cores e o visual ficam em `src/styles/index.css` (variáveis no topo, dentro de `:root`).
-As imagens ficam em `src/assets/` (foto, `projetos/`, `servicos/`, `tech/`).
+As cores e o visual ficam em `src/estilos/estilo.css` (variáveis no topo, em `:root`).
+As imagens ficam em `src/imagens/`.
 
-## 📁 Estrutura
+## Organização das pastas
 
 ```
 src/
-├── assets/            imagens (foto, projetos, serviços, tecnologias)
-├── components/        Navbar, Hero, About, Services, Projects, ProjectCard,
-│                      Technologies, Contact, Footer, Reveal, SectionHeading, Icons
-├── data/              conteúdo editável
-├── styles/index.css   tema azul + todos os estilos (CSS puro)
-├── App.tsx            monta as seções
-└── main.tsx           ponto de entrada
+├── imagens/            fotos e imagens (foto, projetos, servicos, tecnologias)
+├── componentes/        cada parte da tela:
+│                       Menu, Inicio, Sobre, Servicos, Projetos, CartaoProjeto,
+│                       Tecnologias, Contato, Rodape, Aparecer, TituloSecao, Icones
+├── dados/              conteúdo editável (perfil, projetos, servicos, tecnologias)
+├── estilos/estilo.css  cores e estilos (CSS puro)
+├── Aplicativo.tsx      junta todas as seções
+└── principal.tsx       inicia o site
 ```
 
-## 🧰 Tecnologias
+## Tecnologias usadas
 
-React 19 · TypeScript · Vite · CSS puro
+React · TypeScript · Vite · CSS puro
