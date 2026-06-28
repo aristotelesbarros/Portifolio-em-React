@@ -9,9 +9,9 @@ export default function Tecnologias() {
 
       <div className="container">
         <TituloSecao
-          rotulo="Stack"
-          titulo="Tecnologias que uso"
-          descricao="As ferramentas com que trabalho no dia a dia, organizadas por categoria."
+          rotulo=""
+          titulo="Tecnologias"
+          descricao=""
         />
 
         <div className="tecnologias-grade">

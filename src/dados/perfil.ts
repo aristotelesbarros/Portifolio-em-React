@@ -13,9 +13,9 @@ export const perfil = {
   foto: foto,
 
   sobre: [
-    "Bem-vindos! Me chamo Aristoteles Barros Dal Farra, graduando em Análise e Desenvolvimento de Sistemas, com grande entusiasmo pelo mundo da tecnologia. Recentemente, concluí um curso de Desenvolvedor Full Stack Júnior, ampliando minha experiência no desenvolvimento web.",
-    "Desde cedo, sempre me interessei por tecnologia e seu impacto na forma como nos conectamos e inovamos. Esse fascínio me motivou a aprofundar meus conhecimentos em programação e a desenvolver projetos próprios, sempre focado em unir estética e funcionalidade para proporcionar experiências digitais eficazes.",
-    "Atualmente, estou dedicado a evoluir como desenvolvedor Full Stack, explorando novas ferramentas e metodologias para criar soluções modernas e eficientes.",
+    "Bem-vindos! Me chamo Aristoteles Barros Dal Farra e sou formado em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e desenvolvimento de software. Ao longo da minha formação, venho aprimorando meus conhecimentos por meio de cursos, estudos constantes e projetos práticos, fortalecendo minha base para atuar na área de Tecnologia da Informação.", 
+    "Tenho grande interesse em criar soluções que unam funcionalidade, organização e uma boa experiência para o usuário. Acredito que a programação vai além de escrever código: é uma ferramenta para resolver problemas e transformar ideias em soluções eficientes.",
+    "Atualmente, sigo focado em evoluir como desenvolvedor, buscando novos desafios, ampliando meus conhecimentos e aprimorando minhas habilidades para contribuir com projetos de qualidade e crescer profissionalmente na área de TI."
   ],
 
   numeros: [

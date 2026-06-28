@@ -6,9 +6,9 @@ export default function Servicos() {
   return (
     <section id="servicos" className="secao container">
       <TituloSecao
-        rotulo="Serviços"
-        titulo="O que eu faço"
-        descricao="Áreas em que trabalho para tirar uma ideia do papel e colocá-la no ar."
+        rotulo=""
+        titulo="Meus Serviços"
+        descricao=""
       />
 
       <div className="servicos-grade">

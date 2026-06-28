@@ -11,7 +11,7 @@ export default function TituloSecao(propriedades: PropriedadesTitulo) {
     <div className="cabecalho-secao">
       <Aparecer>
         <p className="rotulo">
-          <span className="rotulo-linha" />
+          <span className="" />
           {propriedades.rotulo}
         </p>
       </Aparecer>

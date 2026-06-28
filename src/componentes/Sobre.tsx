@@ -6,7 +6,7 @@ import { IconeUsuario } from "./Icones";
 export default function Sobre() {
   return (
     <section id="sobre" className="secao container">
-      <TituloSecao rotulo="Sobre mim" titulo="Um pouco da minha jornada" />
+      <TituloSecao rotulo="" titulo="Um pouco sobre minha Jornada" />
 
       <div className="sobre-grade">
         <Aparecer direcao="direita">

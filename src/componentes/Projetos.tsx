@@ -7,7 +7,7 @@ export default function Projetos() {
   return (
     <section id="projetos" className="secao container">
       <TituloSecao
-        rotulo="Portfólio"
+        rotulo=""
         titulo="Meus Projetos"
         descricao="Uma seleção de trabalhos. Clique no ícone do GitHub para ver os repositórios."
       />
