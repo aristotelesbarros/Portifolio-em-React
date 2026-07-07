@@ -1,10 +1,28 @@
 import { perfil } from "../dados/perfil";
 import Aparecer from "./Aparecer";
-import { IconeGithub, IconeLinkedin, IconeWhatsapp, IconeSeta } from "./Icones";
+import {
+  IconeGithub,
+  IconeLinkedin,
+  IconeWhatsapp,
+  IconeSeta,
+} from "./Icones";
+
+import fundo from "../imagens/projetos/fundo.png";
 
 export default function Inicio() {
   return (
     <section id="topo" className="inicio">
+      {/* Banner de fundo */}
+      <img
+        src={fundo}
+        alt="Banner Desenvolvedor"
+        className="inicio-banner"
+      />
+
+      {/* Camada escura para melhorar a leitura */}
+      <div className="inicio-overlay" />
+
+      {/* Efeitos do tema */}
       <div className="inicio-fundo" aria-hidden="true">
         <div className="grade" />
         <div className="brilho brilho-1" />
@@ -16,7 +34,9 @@ export default function Inicio() {
         <Aparecer>
           <p className="aviso">
             {perfil.disponivel && <span className="ponto-piscando" />}
-            {perfil.disponivel ? "Disponível para projetos" : perfil.cidade}
+            {perfil.disponivel
+              ? "Disponível para projetos"
+              : perfil.cidade}
           </p>
         </Aparecer>
 
@@ -29,7 +49,8 @@ export default function Inicio() {
 
         <Aparecer atraso={160}>
           <p className="inicio-subtitulo">
-            <span className="inicio-cargo">{perfil.cargo}.</span> {perfil.frase}
+            <span className="inicio-cargo">{perfil.cargo}.</span>{" "}
+            {perfil.frase}
           </p>
         </Aparecer>
 
@@ -39,6 +60,7 @@ export default function Inicio() {
               Ver projetos
               <IconeSeta className="icone-pequeno" />
             </a>
+
             <a href="#contato" className="botao botao-vazado">
               Entrar em contato
             </a>
@@ -47,13 +69,33 @@ export default function Inicio() {
 
         <Aparecer atraso={320}>
           <div className="linha-redes">
-            <a href={perfil.redes.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="botao-rede">
+            <a
+              href={perfil.redes.github}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              className="botao-rede"
+            >
               <IconeGithub className="icone-medio" />
             </a>
-            <a href={perfil.redes.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="botao-rede">
+
+            <a
+              href={perfil.redes.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              className="botao-rede"
+            >
               <IconeLinkedin className="icone-medio" />
             </a>
-            <a href={perfil.redes.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="botao-rede">
+
+            <a
+              href={perfil.redes.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp"
+              className="botao-rede"
+            >
               <IconeWhatsapp className="icone-medio" />
             </a>
           </div>

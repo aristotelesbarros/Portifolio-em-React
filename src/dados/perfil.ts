@@ -7,7 +7,7 @@ export const perfil = {
   nome: "Aristoteles Barros Dal Farra",
   cargo: "Desenvolvedor Full Stack",
   frase:
-    "Graduando em Análise e Desenvolvimento de Sistemas, unindo estética e funcionalidade para criar experiências digitais eficazes.",
+    "Graduado em Análise e Desenvolvimento de Sistemas, unindo estética e funcionalidade para criar experiências digitais eficazes.",
   cidade: "",
   disponivel: true,
   foto: foto,

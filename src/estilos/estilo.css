@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap");
 
-/* ============================================================
-   CORES E VARIÁVEIS DO TEMA (tons de azul)
-============================================================ */
 :root {
   --cor-fundo: #060a18;
   --cor-superficie: #0b1228;
@@ -25,7 +22,7 @@
   --largura-maxima: 1120px;
 }
 
-/* RESET BÁSICO */
+
 * {
   margin: 0;
   padding: 0;
@@ -134,12 +131,13 @@ img {
 .grade {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(56, 189, 248, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.06) 1px, transparent 1px);
+ background-image:
+  linear-gradient(rgba(56,189,248,.04) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(56,189,248,.04) 1px, transparent 1px);
   background-size: 48px 48px;
   -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  opacity: .45;
 }
 
 /* ============================================================
@@ -316,33 +314,85 @@ img {
 .inicio {
   position: relative;
   overflow: hidden;
+
+  min-height: 900px;
+
+  display: flex;
+  align-items: center;
+
   padding: 170px 0 130px;
 }
+
+.inicio-banner {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  z-index: -5;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.inicio-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(6,10,24,.92) 0%,
+    rgba(6,10,24,.80) 22%,
+    rgba(6,10,24,.55) 45%,
+    rgba(6,10,24,.22) 70%,
+    rgba(6,10,24,.08) 100%
+  );
+
+  z-index: -4;
+}
+
 .inicio-fundo {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: -3;
 }
 .brilho-1 {
-  top: -130px;
-  left: 25%;
-  width: 36rem;
-  height: 36rem;
-  background: rgba(59, 130, 246, 0.25);
+  top: -150px;
+  left: 35%;
+
+  width: 45rem;
+  height: 45rem;
+
+  background: rgba(59,130,246,.22);
 }
+
 .brilho-2 {
-  top: -40px;
-  right: 25%;
-  width: 28rem;
-  height: 28rem;
-  background: rgba(56, 189, 248, 0.2);
+  top: -80px;
+  right: 18%;
+
+  width: 32rem;
+  height: 32rem;
+
+  background: rgba(56,189,248,.16);
+
   animation-delay: -6s;
 }
+
 .inicio-degrade {
   position: absolute;
   inset: auto 0 0 0;
-  height: 160px;
-  background: linear-gradient(to bottom, transparent, var(--cor-fundo));
+
+  height: 220px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--cor-fundo)
+  );
 }
 
 .aviso {
@@ -922,6 +972,41 @@ img {
   .marca-nome {
     display: none;
   }
+}
+
+@media (max-width: 900px) {
+
+  .inicio {
+    min-height: 760px;
+    padding: 150px 0 100px;
+  }
+
+  .inicio-banner {
+    object-position: 72% center;
+  }
+
+  .inicio-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(6,10,24,.85),
+      rgba(6,10,24,.55),
+      rgba(6,10,24,.30)
+    );
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .inicio {
+    min-height: 680px;
+    padding: 130px 0 80px;
+  }
+
+  .inicio-banner {
+    object-position: 75% center;
+  }
+
 }
 
 /* Acessibilidade: reduz animações para quem prefere */
