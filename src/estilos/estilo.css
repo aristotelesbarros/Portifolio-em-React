@@ -22,7 +22,6 @@
   --largura-maxima: 1120px;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -89,14 +88,10 @@ img {
   color: transparent;
 }
 
-/* TAMANHOS DE ÍCONE */
 .icone-pequeno { width: 18px; height: 18px; }
 .icone-medio { width: 20px; height: 20px; }
 .icone-grande { width: 80px; height: 80px; }
 
-/* ============================================================
-   ANIMAÇÕES
-============================================================ */
 .aparecer {
   opacity: 0;
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
@@ -140,9 +135,6 @@ img {
   opacity: .45;
 }
 
-/* ============================================================
-   BOTÕES
-============================================================ */
 .botao {
   display: inline-flex;
   align-items: center;
@@ -192,9 +184,6 @@ img {
   border-color: rgba(59, 130, 246, 0.6);
 }
 
-/* ============================================================
-   MENU (topo)
-============================================================ */
 .menu {
   position: fixed;
   inset: 0 0 auto 0;
@@ -308,9 +297,6 @@ img {
   color: var(--texto-claro);
 }
 
-/* ============================================================
-   INÍCIO
-============================================================ */
 .inicio {
   position: relative;
   overflow: hidden;
@@ -445,9 +431,6 @@ img {
   gap: 12px;
 }
 
-/* ============================================================
-   CABEÇALHO DE SEÇÃO
-============================================================ */
 .cabecalho-secao {
   max-width: 42rem;
   margin-bottom: 48px;
@@ -486,9 +469,6 @@ img {
   color: var(--texto-medio);
 }
 
-/* ============================================================
-   SOBRE
-============================================================ */
 .sobre-grade {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -577,9 +557,6 @@ img {
   color: var(--texto-medio);
 }
 
-/* ============================================================
-   SERVIÇOS
-============================================================ */
 .servicos-grade {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -626,9 +603,6 @@ img {
   color: var(--texto-medio);
 }
 
-/* ============================================================
-   PROJETOS
-============================================================ */
 .projetos-grade {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -696,8 +670,7 @@ img {
   color: var(--texto-medio);
 }
 .lista-tecnologias {
-  /* "margin-top: auto" empurra as tags e o botão "Código" para o fim do card,
-     deixando todos os cards alinhados mesmo com descrições de tamanhos diferentes. */
+  
   margin-top: auto;
   padding-top: 20px;
   display: flex;
@@ -735,9 +708,6 @@ img {
   color: #fff;
 }
 
-/* ============================================================
-   TECNOLOGIAS
-============================================================ */
 .secao-tecnologias {
   position: relative;
   overflow: hidden;
@@ -837,9 +807,6 @@ img {
   background: linear-gradient(to right, var(--azul-escuro), var(--azul), var(--azul-claro));
 }
 
-/* ============================================================
-   CONTATO
-============================================================ */
 .contato-card {
   position: relative;
   overflow: hidden;
@@ -899,9 +866,6 @@ img {
   gap: 12px;
 }
 
-/* ============================================================
-   RODAPÉ
-============================================================ */
 .rodape {
   border-top: 1px solid rgba(28, 44, 82, 0.6);
 }
@@ -925,9 +889,6 @@ img {
   color: var(--azul-claro);
 }
 
-/* ============================================================
-   RESPONSIVO (celular e tablet)
-============================================================ */
 @media (min-width: 641px) {
   .rodape-interno {
     flex-direction: row;
@@ -1009,7 +970,6 @@ img {
 
 }
 
-/* Acessibilidade: reduz animações para quem prefere */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
