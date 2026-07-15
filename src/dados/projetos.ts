@@ -29,7 +29,7 @@ export const projetos: Projeto[] = [
     titulo: "Sistema Gerenciador Administrativo",
     descricao:
       "Sistema administrativo para cadastro, listagem, edição e exclusão de produtos, com login, dashboard e integração com banco de dados.",
-    tecnologias: ["Node.js", "Express", "MySQL", "JavaScript"],
+    tecnologias: ["Html", "css", "Node.js", "Express", "TypeScript", "MySQL", ],
     corInicial: "#1d4ed8",
     corFinal: "#38bdf8",
     imagem: administrativo,
@@ -39,7 +39,7 @@ export const projetos: Projeto[] = [
   titulo: "Loja de Jogos",
   descricao:
     "Aplicação web de uma loja virtual de jogos, desenvolvida com foco em navegação intuitiva, organização dos produtos e uma experiência moderna para o usuário.",
-  tecnologias: ["React", "CSS"],
+  tecnologias: ["html", "Css", "React", "CSS"],
   corInicial: "#0ea5e9",
   corFinal: "#6366f1",
   imagem: jogos,
@@ -99,12 +99,34 @@ export const projetos: Projeto[] = [
   titulo: "Venda de Carros",
   descricao:
     "Página desenvolvida para exibição e anúncio de veículos, apresentando informações organizadas e um layout voltado para a experiência do usuário.",
-  tecnologias: ["React", "CSS"],
+  tecnologias: ["Html", "Css", "JavaScript"],
   corInicial: "#155e75",
   corFinal: "#22d3ee",
   imagem: carros,
   repositorio: linkGithub,
 },
+
+{
+  titulo: "Gerenciador de Financias",
+  descricao:"Este projeto é uma aplicação web que permite gerenciar transações financeiras, possibilitando criar, editar, excluir e listar registros. A aplicação realiza o armazenamento e a atualização dos dados, garantindo que as informações sejam persistidas e organizadas para consulta e gerenciamento.",
+  tecnologias: ["React", "CSS"],
+  corInicial: "#0c4a6e",
+  corFinal: "#38bdf8",
+  imagem: breakingBad,
+  repositorio: linkGithub,
+},
+
+{
+  titulo: "Jogo da Velha",
+  descricao:"Este é um projeto simples de Jogo da Velha onde o jogo permite que dois jogadores joguem de maneira interativa, alternando entre os símbolos X e 0",
+  tecnologias: ["React", "CSS"],
+  corInicial: "#0c4a6e",
+  corFinal: "#38bdf8",
+  imagem: breakingBad,
+  repositorio: linkGithub,
+},
+
+
 {
   titulo: "Curiosidades Breaking Bad",
   descricao:
@@ -115,5 +137,6 @@ export const projetos: Projeto[] = [
   imagem: breakingBad,
   repositorio: linkGithub,
 },
+
 
 ];
