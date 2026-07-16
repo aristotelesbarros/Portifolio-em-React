@@ -11,6 +11,8 @@ import churrasco from "../imagens/projetos/churrasco.jpg";
 import carros from "../imagens/projetos/carro.jpg";
 import breakingBad from "../imagens/projetos/ba.jpg";
 import administrativo from "../imagens/projetos/admin.jpg";
+import financias from "../imagens/projetos/financias.jpg"
+import jogo from "../imagens/projetos/jogo.jpg"
 
 const linkGithub = "https://github.com/aristotelesbarros?tab=repositories";
 
@@ -39,7 +41,7 @@ export const projetos: Projeto[] = [
   titulo: "Loja de Jogos",
   descricao:
     "Aplicação web de uma loja virtual de jogos, desenvolvida com foco em navegação intuitiva, organização dos produtos e uma experiência moderna para o usuário.",
-  tecnologias: ["html", "Css", "React", "CSS"],
+  tecnologias: ["html", "Css", "React", ],
   corInicial: "#0ea5e9",
   corFinal: "#6366f1",
   imagem: jogos,
@@ -109,10 +111,10 @@ export const projetos: Projeto[] = [
 {
   titulo: "Gerenciador de Financias",
   descricao:"Este projeto é uma aplicação web que permite gerenciar transações financeiras, possibilitando criar, editar, excluir e listar registros. A aplicação realiza o armazenamento e a atualização dos dados, garantindo que as informações sejam persistidas e organizadas para consulta e gerenciamento.",
-  tecnologias: ["React", "CSS"],
+  tecnologias: ["html", "css", "JavaScript" , "Express", ],
   corInicial: "#0c4a6e",
   corFinal: "#38bdf8",
-  imagem: breakingBad,
+  imagem: financias,
   repositorio: linkGithub,
 },
 
@@ -122,7 +124,7 @@ export const projetos: Projeto[] = [
   tecnologias: ["React", "CSS"],
   corInicial: "#0c4a6e",
   corFinal: "#38bdf8",
-  imagem: breakingBad,
+  imagem: jogo,
   repositorio: linkGithub,
 },
 
