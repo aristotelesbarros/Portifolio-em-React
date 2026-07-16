@@ -121,7 +121,7 @@ export const projetos: Projeto[] = [
 {
   titulo: "Jogo da Velha",
   descricao:"Este é um projeto simples de Jogo da Velha onde o jogo permite que dois jogadores joguem de maneira interativa, alternando entre os símbolos X e 0",
-  tecnologias: ["React", "CSS"],
+  tecnologias: ["Html", "Css","JavaScript"],
   corInicial: "#0c4a6e",
   corFinal: "#38bdf8",
   imagem: jogo,
@@ -133,7 +133,7 @@ export const projetos: Projeto[] = [
   titulo: "Curiosidades Breaking Bad",
   descricao:
     "Site dedicado à série Breaking Bad, reunindo curiosidades, informações e conteúdos apresentados em uma interface moderna e organizada.",
-  tecnologias: ["React", "CSS"],
+  tecnologias: ["Html", "Css","JavaScript"],
   corInicial: "#0c4a6e",
   corFinal: "#38bdf8",
   imagem: breakingBad,

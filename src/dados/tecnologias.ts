@@ -1,6 +1,4 @@
-// ============================================================
-//  Tecnologias agrupadas por categoria, com logo e nível (0 a 100).
-// ============================================================
+
 import html from "../imagens/tecnologias/html.png";
 import css from "../imagens/tecnologias/css.png";
 import javascript from "../imagens/tecnologias/javascript.png";
