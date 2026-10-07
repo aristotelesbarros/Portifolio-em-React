@@ -1,7 +1,4 @@
-// ============================================================
-//  Projetos. Cada item vira um card igual aos outros.
-//  Todos têm o link do GitHub no botão "Código".
-// ============================================================
+
 import jogos from "../imagens/projetos/jogos.jpg";
 import spotify from "../imagens/projetos/spot.jpg";
 import comentarios from "../imagens/projetos/comentario.jpg";

@@ -13,7 +13,8 @@ export const perfil = {
   foto: foto,
 
   sobre: [
-    "Bem-vindos! Me chamo Aristoteles Barros Dal Farra e sou formado em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e desenvolvimento de software. Ao longo da minha formação, venho aprimorando meus conhecimentos por meio de cursos, estudos constantes e projetos práticos, fortalecendo minha base para atuar na área de Tecnologia da Informação.", 
+    "Bem-vindos! Me chamo Aristóteles Barros Dal Farra, sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou cursando uma Pós-Graduação em Desenvolvimento de Sistemas com Python. Sou apaixonado por tecnologia e desenvolvimento de software e venho aprimorando continuamente meus conhecimentos por meio de estudos, cursos e projetos práticos, buscando evoluir profissionalmente e fortalecer minha atuação na área de Tecnologia da Informação.",
+ 
     "Tenho grande interesse em criar soluções que unam funcionalidade, organização e uma boa experiência para o usuário. Acredito que a programação vai além de escrever código: é uma ferramenta para resolver problemas e transformar ideias em soluções eficientes.",
     "Atualmente, sigo focado em evoluir como desenvolvedor, buscando novos desafios, ampliando meus conhecimentos e aprimorando minhas habilidades para contribuir com projetos de qualidade e crescer profissionalmente na área de TI."
   ],
@@ -21,7 +22,7 @@ export const perfil = {
   numeros: [
     { valor: "9+", texto: "Projetos construídos" },
     { valor: "Full Stack", texto: "Formação Júnior" },
-    { valor: "ADS", texto: "Graduando" },
+    { valor: "ADS", texto: "Graduado" },
   ],
 
   redes: {
